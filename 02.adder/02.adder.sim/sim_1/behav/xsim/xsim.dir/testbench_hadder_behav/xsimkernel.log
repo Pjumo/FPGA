@@ -1,0 +1,7 @@
+Running: xsim.dir/testbench_hadder_behav/xsimk.exe -simmode gui -wdb testbench_hadder_behav.wdb -simrunnum 0 -socket 60670
+Design successfully loaded
+Design Loading Memory Usage: 9084 KB (Peak: 9084 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 9732 KB (Peak: 9732 KB)
+Simulation CPU Usage: 77 ms
