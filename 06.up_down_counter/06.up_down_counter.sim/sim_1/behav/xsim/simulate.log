@@ -1,0 +1,93 @@
+Time resolution is 1 ps
+time=                   0 mode:00x an:1110 seg:11000000
+MODE IDLE --> UP_COUNTER
+btn_press btn:0 start
+time=          1000095000 mode:00x an:1101 seg:11000000
+time=          2000095000 mode:00x an:1011 seg:11000000
+time=          3000095000 mode:00x an:0111 seg:11000000
+time=          4000095000 mode:00x an:1110 seg:11000000
+time=          5000095000 mode:00x an:1101 seg:11000000
+time=          6000095000 mode:00x an:1011 seg:11000000
+time=          7000095000 mode:00x an:0111 seg:11000000
+time=          8000095000 mode:00x an:1110 seg:11000000
+time=          9000095000 mode:00x an:1101 seg:11000000
+time=         10000095000 mode:00x an:1011 seg:11000000
+time=         10550205000 mode:01x an:1011 seg:11000000
+time=         11000095000 mode:01x an:0111 seg:11000000
+time=         12000095000 mode:01x an:1110 seg:11000000
+time=         13000095000 mode:01x an:1101 seg:11000000
+time=         14000095000 mode:01x an:1011 seg:11000000
+time=         15000095000 mode:01x an:0111 seg:11000000
+time=         16000095000 mode:01x an:1110 seg:11000000
+time=         17000095000 mode:01x an:1101 seg:11000000
+time=         18000095000 mode:01x an:1011 seg:11000000
+time=         19000095000 mode:01x an:0111 seg:11000000
+time=         20000095000 mode:01x an:1110 seg:11000000
+time=         20550195000 mode:010 an:1110 seg:11000000
+time=         21000095000 mode:010 an:1101 seg:11000000
+time=         22000095000 mode:010 an:1011 seg:11000000
+btn_press btn:0 end
+time=         23000095000 mode:010 an:0111 seg:11000000
+time=         24000095000 mode:010 an:1110 seg:11111001
+time=         25000095000 mode:010 an:1101 seg:11000000
+time=         26000095000 mode:010 an:1011 seg:11000000
+time=         27000095000 mode:010 an:0111 seg:11000000
+time=         28000095000 mode:010 an:1110 seg:11111001
+time=         29000095000 mode:010 an:1101 seg:11000000
+time=         30000095000 mode:010 an:1011 seg:11000000
+time=         31000095000 mode:010 an:0111 seg:11000000
+time=         32000095000 mode:010 an:1110 seg:11100100
+time=         33000095000 mode:010 an:1101 seg:11000000
+time=         34000095000 mode:010 an:1011 seg:11000000
+time=         35000095000 mode:010 an:0111 seg:11000000
+time=         36000095000 mode:010 an:1110 seg:11100100
+time=         37000095000 mode:010 an:1101 seg:11000000
+time=         38000095000 mode:010 an:1011 seg:11000000
+time=         39000095000 mode:010 an:0111 seg:11000000
+time=         40000095000 mode:010 an:1110 seg:11100100
+time=         41000095000 mode:010 an:1101 seg:11000000
+time=         42000095000 mode:010 an:1011 seg:11000000
+UP_COUNTER --> DOWN_COUNTER
+btn_press btn:0 start
+time=         43000095000 mode:010 an:0111 seg:11000000
+time=         44000095000 mode:010 an:1110 seg:10110000
+time=         45000095000 mode:010 an:1101 seg:11000000
+time=         46000095000 mode:010 an:1011 seg:11000000
+time=         47000095000 mode:010 an:0111 seg:11000000
+time=         48000095000 mode:010 an:1110 seg:10110000
+time=         49000095000 mode:010 an:1101 seg:11000000
+time=         50000095000 mode:010 an:1011 seg:11000000
+time=         51000095000 mode:010 an:0111 seg:11000000
+time=         52000095000 mode:010 an:1110 seg:10011001
+time=         53000095000 mode:010 an:1101 seg:11000000
+time=         53100205000 mode:100 an:1101 seg:11000000
+time=         54000095000 mode:100 an:1011 seg:11000000
+time=         55000095000 mode:100 an:0111 seg:11000000
+time=         56000095000 mode:100 an:1110 seg:10011001
+time=         57000095000 mode:100 an:1101 seg:11000000
+time=         58000095000 mode:100 an:1011 seg:11000000
+time=         59000095000 mode:100 an:0111 seg:11000000
+time=         60000095000 mode:100 an:1110 seg:10011001
+time=         61000095000 mode:100 an:1101 seg:11000000
+time=         62000095000 mode:100 an:1011 seg:11000000
+time=         63000095000 mode:100 an:0111 seg:11000000
+time=         64000095000 mode:100 an:1110 seg:10110000
+time=         65000095000 mode:100 an:1101 seg:11000000
+btn_press btn:0 end
+time=         66000095000 mode:100 an:1011 seg:11000000
+time=         67000095000 mode:100 an:0111 seg:11000000
+time=         68000095000 mode:100 an:1110 seg:10110000
+time=         69000095000 mode:100 an:1101 seg:11000000
+time=         70000095000 mode:100 an:1011 seg:11000000
+time=         71000095000 mode:100 an:0111 seg:11000000
+time=         72000095000 mode:100 an:1110 seg:11100100
+time=         73000095000 mode:100 an:1101 seg:11000000
+time=         74000095000 mode:100 an:1011 seg:11000000
+time=         75000095000 mode:100 an:0111 seg:11000000
+DOWN_COUNTER --> SLIDE_SW_READ
+btn_press btn:0 start
+time=         76000095000 mode:100 an:1110 seg:11100100
+time=         77000095000 mode:100 an:1101 seg:11000000
+time=         78000095000 mode:100 an:1011 seg:11000000
+time=         79000095000 mode:100 an:0111 seg:11000000
+time=         80000095000 mode:100 an:1110 seg:11100100
