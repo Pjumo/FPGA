@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Feb 26 15:27:30 2026
+# Process ID: 18876
+# Current directory: G:/Project/FPGA/ai1/11.pwm_dc_motor/11.pwm_dc_motor.runs/impl_1
+# Command line: vivado.exe -log top_pwm_dc_motor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_pwm_dc_motor.tcl -notrace
+# Log file: G:/Project/FPGA/ai1/11.pwm_dc_motor/11.pwm_dc_motor.runs/impl_1/top_pwm_dc_motor.vdi
+# Journal file: G:/Project/FPGA/ai1/11.pwm_dc_motor/11.pwm_dc_motor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_pwm_dc_motor.tcl -notrace
