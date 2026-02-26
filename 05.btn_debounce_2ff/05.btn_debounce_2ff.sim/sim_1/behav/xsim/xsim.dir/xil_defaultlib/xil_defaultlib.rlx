@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sim_1/new/tb_button_debounce.v,1770880315,verilog,,,,tb_button_debounce,,,,,,,,
+G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/D_FF.v,1770870561,verilog,,G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/button_debounce.v,,D_FF,,,,,,,,
+G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/button_debounce.v,1770873848,verilog,,G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/clock_80Hz.v,,button_debounce,,,,,,,,
+G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/clock_80Hz.v,1770869967,verilog,,G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/led_toggle.v,,clock_80Hz,,,,,,,,
+G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/led_toggle.v,1770873696,verilog,,G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/top_btn.v,,led_toggle,,,,,,,,
+G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sources_1/new/top_btn.v,1770872787,verilog,,G:/Project/FPGA/ai1/05.btn_debounce_2ff/05.btn_debounce_2ff.srcs/sim_1/new/tb_button_debounce.v,,top_btn,,,,,,,,
