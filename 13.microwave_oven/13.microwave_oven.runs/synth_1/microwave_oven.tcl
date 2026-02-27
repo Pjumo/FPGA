@@ -90,6 +90,8 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/btn_debouncer.v
   G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v
+  G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_beep.v
+  G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_motor.v
   G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_time.v
   G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_oven.v
 }

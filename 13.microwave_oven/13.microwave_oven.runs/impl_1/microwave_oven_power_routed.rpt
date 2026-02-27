@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Fri Feb 27 18:27:24 2026
+| Date             : Fri Feb 27 22:14:10 2026
 | Host             : DESKTOP-0G8LKRK running 64-bit major release  (build 9200)
 | Command          : report_power -file microwave_oven_power_routed.rpt -pb microwave_oven_power_summary_routed.pb -rpx microwave_oven_power_routed.rpx
 | Design           : microwave_oven
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.087        |
+| Total On-Chip Power (W)  | 0.099        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.015        |
+| Dynamic (W)              | 0.027        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |      718 |       --- |             --- |
-|   LUT as Logic |     0.003 |      316 |     20800 |            1.52 |
-|   CARRY4       |    <0.001 |       68 |      8150 |            0.83 |
-|   Register     |    <0.001 |      215 |     41600 |            0.52 |
-|   Others       |     0.000 |       16 |       --- |             --- |
-| Signals        |     0.002 |      550 |       --- |             --- |
-| I/O            |     0.008 |       20 |       106 |           18.87 |
+| Clocks         |     0.003 |        3 |       --- |             --- |
+| Slice Logic    |     0.004 |     1228 |       --- |             --- |
+|   LUT as Logic |     0.004 |      544 |     20800 |            2.62 |
+|   CARRY4       |    <0.001 |      117 |      8150 |            1.44 |
+|   Register     |    <0.001 |      350 |     41600 |            0.84 |
+|   Others       |     0.000 |       23 |       --- |             --- |
+| Signals        |     0.004 |      989 |       --- |             --- |
+| I/O            |     0.016 |       25 |       106 |           23.58 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.087 |          |           |                 |
+| Total          |     0.099 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.007 |      0.010 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.020 |       0.011 |      0.010 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,10 +140,12 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| microwave_oven      |     0.015 |
-|   u_fnd_controller  |     0.003 |
-|     u_bin2bdc4digit |     0.002 |
-|   u_microwave_time  |     0.001 |
+| microwave_oven      |     0.027 |
+|   u_btn_debouncer   |     0.001 |
+|   u_fnd_controller  |     0.004 |
+|     u_bin2bdc4digit |     0.003 |
+|   u_microwave_beep  |     0.002 |
+|   u_microwave_time  |     0.002 |
 +---------------------+-----------+
 
 

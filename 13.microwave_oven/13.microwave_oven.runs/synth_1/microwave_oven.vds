@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Fri Feb 27 18:25:57 2026
-# Process ID: 2876
+# Start of session at: Fri Feb 27 22:12:43 2026
+# Process ID: 19232
 # Current directory: G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.runs/synth_1
 # Command line: vivado.exe -log microwave_oven.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microwave_oven.tcl
 # Log file: G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.runs/synth_1/microwave_oven.vds
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18868
+INFO: [Synth 8-7075] Helper process launched with PID 14328
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1284.168 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1283.371 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'microwave_oven' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_oven.v:3]
 INFO: [Synth 8-6157] synthesizing module 'btn_debouncer' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/btn_debouncer.v:3]
@@ -28,36 +28,40 @@ INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [G:/Project/FPGA
 INFO: [Synth 8-6155] done synthesizing module 'btn_debouncer' (2#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/btn_debouncer.v:3]
 INFO: [Synth 8-6157] synthesizing module 'microwave_time' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_time.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'microwave_time' (3#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_time.v:3]
+INFO: [Synth 8-6157] synthesizing module 'microwave_beep' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_beep.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'microwave_beep' (4#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_beep.v:3]
+INFO: [Synth 8-6157] synthesizing module 'microwave_motor' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_motor.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'microwave_motor' (5#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_motor.v:3]
 INFO: [Synth 8-6157] synthesizing module 'fnd_controller' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:3]
-INFO: [Synth 8-6157] synthesizing module 'fnd_circle_on' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:51]
-INFO: [Synth 8-6155] done synthesizing module 'fnd_circle_on' (4#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:51]
-INFO: [Synth 8-6157] synthesizing module 'fnd_digit_select' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'fnd_digit_select' (5#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:73]
-INFO: [Synth 8-6157] synthesizing module 'bin2bdc4digit' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:96]
-INFO: [Synth 8-6155] done synthesizing module 'bin2bdc4digit' (6#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:96]
-INFO: [Synth 8-6157] synthesizing module 'fnd_digit_display' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:217]
-INFO: [Synth 8-226] default block is never used [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:230]
-WARNING: [Synth 8-567] referenced signal 'd1' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:229]
-WARNING: [Synth 8-567] referenced signal 'd10' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:229]
-WARNING: [Synth 8-567] referenced signal 'd100' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:229]
-WARNING: [Synth 8-567] referenced signal 'd1000' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:229]
-WARNING: [Synth 8-567] referenced signal 'dot' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:259]
-INFO: [Synth 8-6155] done synthesizing module 'fnd_digit_display' (7#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:217]
-INFO: [Synth 8-6155] done synthesizing module 'fnd_controller' (8#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'microwave_oven' (9#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_oven.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fnd_circle_on' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_circle_on' (6#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fnd_digit_select' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_digit_select' (7#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:75]
+INFO: [Synth 8-6157] synthesizing module 'bin2bdc4digit' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bdc4digit' (8#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:98]
+INFO: [Synth 8-6157] synthesizing module 'fnd_digit_display' [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:220]
+INFO: [Synth 8-226] default block is never used [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:233]
+WARNING: [Synth 8-567] referenced signal 'd1' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:232]
+WARNING: [Synth 8-567] referenced signal 'd10' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:232]
+WARNING: [Synth 8-567] referenced signal 'd100' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:232]
+WARNING: [Synth 8-567] referenced signal 'd1000' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:232]
+WARNING: [Synth 8-567] referenced signal 'dot' should be on the sensitivity list [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:262]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_digit_display' (9#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:220]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_controller' (10#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/fnd_controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'microwave_oven' (11#1) [G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.srcs/sources_1/new/microwave_oven.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1284.168 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1283.371 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1284.168 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1283.371 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1284.168 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1283.371 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1284.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1283.371 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -68,59 +72,88 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/microwave_oven_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1288.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1300.621 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1288.500 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1300.621 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.500 ; gain = 4.332
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1300.621 ; gain = 17.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.500 ; gain = 4.332
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1300.621 ; gain = 17.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.500 ; gain = 4.332
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1300.621 ; gain = 17.250
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'play_step_reg' in module 'microwave_beep'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+               BEEP_PLAY |                               01 |                               01
+                S1_TIMER |                               10 |                               10
+             MELODY_PLAY |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'play_step_reg' using encoding 'sequential' in module 'microwave_beep'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1288.500 ; gain = 4.332
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1300.621 ; gain = 17.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   28 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   28 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 1     
 	   2 Input   18 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 7     
-	   2 Input    4 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
 	   2 Input    3 Bit       Adders := 1     
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
-	               28 Bit    Registers := 1     
+	               28 Bit    Registers := 2     
+	               27 Bit    Registers := 1     
+	               22 Bit    Registers := 2     
 	               18 Bit    Registers := 1     
 	                6 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 10    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
 +---Muxes : 
-	   2 Input   28 Bit        Muxes := 1     
-	   2 Input   18 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 12    
-	   2 Input    4 Bit        Muxes := 9     
+	   2 Input   28 Bit        Muxes := 3     
+	   2 Input   27 Bit        Muxes := 3     
+	   4 Input   27 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 5     
+	   4 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 3     
+	   4 Input   18 Bit        Muxes := 1     
+	   7 Input   18 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 16    
+	   4 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 10    
 	  12 Input    4 Bit        Muxes := 4     
 	   4 Input    4 Bit        Muxes := 2     
-	   2 Input    3 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 19    
-	   4 Input    1 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 33    
+	   4 Input    1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -137,25 +170,40 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1288.500 ; gain = 4.332
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1300.621 ; gain = 17.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|microwave_beep | step_freq  | 32x18         | LUT            | 
+|microwave_beep | step_freq  | 32x18         | LUT            | 
++---------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1288.500 ; gain = 4.332
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.621 ; gain = 17.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1383.215 ; gain = 99.047
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1432.824 ; gain = 149.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -173,37 +221,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -220,41 +268,40 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    68|
-|3     |LUT1   |     7|
-|4     |LUT2   |   158|
-|5     |LUT3   |    46|
-|6     |LUT4   |    65|
-|7     |LUT5   |    48|
-|8     |LUT6   |    95|
-|9     |FDCE   |    90|
-|10    |FDPE   |     3|
-|11    |FDRE   |   122|
-|12    |IBUF   |     5|
-|13    |OBUF   |    12|
-|14    |OBUFT  |     3|
+|2     |CARRY4 |   117|
+|3     |LUT1   |    11|
+|4     |LUT2   |   164|
+|5     |LUT3   |   107|
+|6     |LUT4   |   146|
+|7     |LUT5   |    95|
+|8     |LUT6   |   215|
+|9     |FDCE   |   181|
+|10    |FDPE   |     5|
+|11    |FDRE   |   164|
+|12    |IBUF   |     7|
+|13    |OBUF   |    18|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1393.281 ; gain = 104.781
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1393.281 ; gain = 109.113
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1432.859 ; gain = 132.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.859 ; gain = 149.488
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1396.137 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 68 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1435.676 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 117 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1399.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.309 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 1636891
+Synth Design complete, checksum: d1f60a50
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1399.789 ; gain = 115.621
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1441.309 ; gain = 157.938
 INFO: [Common 17-1381] The checkpoint 'G:/Project/FPGA/ai1/13.microwave_oven/13.microwave_oven.runs/synth_1/microwave_oven.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file microwave_oven_utilization_synth.rpt -pb microwave_oven_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 27 18:26:38 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 27 22:13:23 2026...

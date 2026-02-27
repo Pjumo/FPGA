@@ -4,6 +4,7 @@ module fnd_controller(
     input clk,
     input reset,
     input time_out,
+    input door_state,
     input [13:0] in_data,
     output [3:0] an,
     output [7:0] seg
@@ -28,6 +29,7 @@ module fnd_controller(
         .in_data    (in_data),
         .clk        (clk),
         .circle_on  (w_circle_on),
+        .door_state (door_state),
         .time_out   (time_out),
         .d1         (w_d1),
         .d10        (w_d10),
@@ -97,6 +99,7 @@ module bin2bdc4digit(
     input [13:0] in_data,
     input clk,
     input circle_on,
+    input door_state,
     input time_out,
     output [3:0] d1,
     output [3:0] d10,
@@ -202,16 +205,16 @@ module bin2bdc4digit(
     // in_data가 NONE_DATA일 경우 아무것도 출력 x, circle_on 여부에 따라 circle 혹은 분초
     assign d1 = (time_out)? 4'd0 : 
                 (in_data == NONE_DATA)? NONE : 
-                ((circle_on) ? circle_d1 : in_data % 10);
+                ((circle_on && !door_state) ? circle_d1 : in_data % 10);
     assign d10 = (time_out)? 4'd0 : 
                 (in_data == NONE_DATA)? NONE : 
-                ((circle_on) ? circle_d10 : (in_data / 10) % 10);
+                ((circle_on && !door_state) ? circle_d10 : (in_data / 10) % 10);
     assign d100 = (time_out)? 4'd0 : 
                 (in_data == NONE_DATA)? NONE : 
-                ((circle_on) ? circle_d100 : (in_data / 100) % 10);
+                ((circle_on && !door_state) ? circle_d100 : (in_data / 100) % 10);
     assign d1000 = (time_out)? 4'd0 :
                 (in_data == NONE_DATA)? NONE :
-                ((circle_on) ? circle_d1000 : (in_data / 1000) % 10);
+                ((circle_on && !door_state) ? circle_d1000 : (in_data / 1000) % 10);
 endmodule
 
 module fnd_digit_display(

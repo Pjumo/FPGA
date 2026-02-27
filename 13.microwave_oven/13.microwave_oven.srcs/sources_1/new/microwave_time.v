@@ -6,8 +6,11 @@ module microwave_time(
     input btn_10s,
     input btn_30s,
     input btn_cancel,
+    input door_state,
+    input power_state,
     output [13:0] in_data,
-    output reg time_out = 0
+    output reg time_out,
+    output reg microwave_state
 );
     reg [5:0] minute = 0, second = 0;
     reg prev_btn_10s, prev_btn_30s, prev_btn_cancel;
@@ -17,7 +20,7 @@ module microwave_time(
     reg [2:0] time_out_cnt = 3'd7;  // time_out_cnt를 초기상태 3'b111로
 
     always @(posedge clk, posedge reset) begin
-        if(reset) begin
+        if(reset || !power_state) begin
             minute <= 0;
             second <= 0;
             cnt_1s <= 0;
@@ -41,27 +44,28 @@ module microwave_time(
                 second <= 0;
             end
 
-            if(cnt_1s >= 100_000_000) begin // 1초마다 minute, second 감소 로직
-                if(second > 0) begin
-                    second <= second - 1;
-                end else if(second == 0 && minute > 0) begin
-                    minute <= minute -1;
-                    second <= 59;
+            if(!door_state) begin    // 문 열려있으면 시간 감소 x
+                if(cnt_1s >= 100_000_000) begin // 1초마다 minute, second 감소 로직
+                    if(second > 0) begin
+                        second <= second - 1;
+                    end else if(second == 0 && minute > 0) begin
+                        minute <= minute -1;
+                        second <= 59;
+                    end
+                    cnt_1s <= 0;
+                end else begin
+                    cnt_1s <= cnt_1s + 1;
                 end
-                cnt_1s <= 0;
-            end else begin
-                cnt_1s <= cnt_1s + 1;
             end
+            prev_btn_10s <= btn_10s;
+            prev_btn_30s <= btn_30s;
+            prev_btn_cancel <= btn_cancel;
         end
-
-        prev_btn_10s <= btn_10s;
-        prev_btn_30s <= btn_30s;
-        prev_btn_cancel <= btn_cancel;
     end
 
     // time_out logic
     always @(posedge clk, posedge reset) begin
-        if(reset) begin
+        if(reset || !power_state) begin
             time_out <= 0;
             time_out_cnt <= 3'd7;
         end else begin
@@ -83,6 +87,23 @@ module microwave_time(
                     end else begin
                         cnt_500ms <= cnt_500ms + 1;
                     end
+                end
+            end
+        end
+    end
+
+    // microwave 동작중 확인 로직
+    always @(posedge clk, posedge reset) begin
+        if(reset || !power_state) begin
+            microwave_state <= 0;
+        end else begin
+            if(door_state) begin
+                microwave_state <= 0;
+            end else begin
+                if(second > 0 || minute > 0) begin
+                    microwave_state <= 1;
+                end else begin
+                    microwave_state <= 0;
                 end
             end
         end

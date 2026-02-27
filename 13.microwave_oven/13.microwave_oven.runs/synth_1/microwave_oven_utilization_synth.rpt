@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Fri Feb 27 18:26:38 2026
+| Date         : Fri Feb 27 22:13:23 2026
 | Host         : DESKTOP-0G8LKRK running 64-bit major release  (build 9200)
 | Command      : report_utilization -file microwave_oven_utilization_synth.rpt -pb microwave_oven_utilization_synth.pb
 | Design       : microwave_oven
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  324 |     0 |          0 |     20800 |  1.56 |
-|   LUT as Logic          |  324 |     0 |          0 |     20800 |  1.56 |
+| Slice LUTs*             |  554 |     0 |          0 |     20800 |  2.66 |
+|   LUT as Logic          |  554 |     0 |          0 |     20800 |  2.66 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         |  215 |     0 |          0 |     41600 |  0.52 |
-|   Register as Flip Flop |  215 |     0 |          0 |     41600 |  0.52 |
+| Slice Registers         |  350 |     0 |          0 |     41600 |  0.84 |
+|   Register as Flip Flop |  350 |     0 |          0 |     41600 |  0.84 |
 |   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
@@ -54,10 +54,10 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 3     |          Yes |           - |          Set |
-| 90    |          Yes |           - |        Reset |
+| 5     |          Yes |           - |          Set |
+| 181   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 122   |          Yes |       Reset |            - |
+| 164   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   20 |     0 |          0 |       106 | 18.87 |
+| Bonded IOB                  |   25 |     0 |          0 |       106 | 23.58 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -149,19 +149,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  158 |                 LUT |
-| FDRE     |  122 |        Flop & Latch |
-| LUT6     |   95 |                 LUT |
-| FDCE     |   90 |        Flop & Latch |
-| CARRY4   |   68 |          CarryLogic |
-| LUT4     |   65 |                 LUT |
-| LUT5     |   48 |                 LUT |
-| LUT3     |   46 |                 LUT |
-| OBUF     |   12 |                  IO |
-| LUT1     |    7 |                 LUT |
-| IBUF     |    5 |                  IO |
-| OBUFT    |    3 |                  IO |
-| FDPE     |    3 |        Flop & Latch |
+| LUT6     |  215 |                 LUT |
+| FDCE     |  181 |        Flop & Latch |
+| LUT2     |  164 |                 LUT |
+| FDRE     |  164 |        Flop & Latch |
+| LUT4     |  146 |                 LUT |
+| CARRY4   |  117 |          CarryLogic |
+| LUT3     |  107 |                 LUT |
+| LUT5     |   95 |                 LUT |
+| OBUF     |   18 |                  IO |
+| LUT1     |   11 |                 LUT |
+| IBUF     |    7 |                  IO |
+| FDPE     |    5 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
