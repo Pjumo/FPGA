@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../12.my_make_buzzer.srcs/sources_1/imports/new/btn_debounce.v" \
+"../../../../12.my_make_buzzer.srcs/sources_1/new/make_buzzer.v" \
+"../../../../12.my_make_buzzer.srcs/sources_1/new/play_beep.v" \
+"../../../../12.my_make_buzzer.srcs/sim_1/new/tb_buzzer.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
