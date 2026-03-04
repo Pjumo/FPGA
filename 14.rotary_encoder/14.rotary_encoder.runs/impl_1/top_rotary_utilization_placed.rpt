@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Wed Mar  4 09:29:34 2026
+| Date         : Wed Mar  4 11:19:10 2026
 | Host         : DESKTOP-0G8LKRK running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_rotary_utilization_placed.rpt -pb top_rotary_utilization_placed.pb
 | Design       : top_rotary
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs              |   38 |     0 |          0 |     20800 |  0.18 |
-|   LUT as Logic          |   38 |     0 |          0 |     20800 |  0.18 |
+| Slice LUTs              |   37 |     0 |          0 |     20800 |  0.18 |
+|   LUT as Logic          |   37 |     0 |          0 |     20800 |  0.18 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         |   79 |     0 |          0 |     41600 |  0.19 |
-|   Register as Flip Flop |   79 |     0 |          0 |     41600 |  0.19 |
+| Slice Registers         |   81 |     0 |          0 |     41600 |  0.19 |
+|   Register as Flip Flop |   81 |     0 |          0 |     41600 |  0.19 |
 |   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 16    |          Yes |           - |        Reset |
+| 18    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 63    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -67,20 +67,20 @@ Table of Contents
 +--------------------------------------------+------+-------+------------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+------+-------+------------+-----------+-------+
-| Slice                                      |   30 |     0 |          0 |      8150 |  0.37 |
-|   SLICEL                                   |   19 |     0 |            |           |       |
-|   SLICEM                                   |   11 |     0 |            |           |       |
-| LUT as Logic                               |   38 |     0 |          0 |     20800 |  0.18 |
+| Slice                                      |   29 |     0 |          0 |      8150 |  0.36 |
+|   SLICEL                                   |   20 |     0 |            |           |       |
+|   SLICEM                                   |    9 |     0 |            |           |       |
+| LUT as Logic                               |   37 |     0 |          0 |     20800 |  0.18 |
 |   using O5 output only                     |    0 |       |            |           |       |
-|   using O6 output only                     |   30 |       |            |           |       |
-|   using O5 and O6                          |    8 |       |            |           |       |
+|   using O6 output only                     |   35 |       |            |           |       |
+|   using O5 and O6                          |    2 |       |            |           |       |
 | LUT as Memory                              |    0 |     0 |          0 |      9600 |  0.00 |
 |   LUT as Distributed RAM                   |    0 |     0 |            |           |       |
 |   LUT as Shift Register                    |    0 |     0 |            |           |       |
-| Slice Registers                            |   79 |     0 |          0 |     41600 |  0.19 |
-|   Register driven from within the Slice    |   71 |       |            |           |       |
-|   Register driven from outside the Slice   |    8 |       |            |           |       |
-|     LUT in front of the register is unused |    1 |       |            |           |       |
+| Slice Registers                            |   81 |     0 |          0 |     41600 |  0.19 |
+|   Register driven from within the Slice    |   74 |       |            |           |       |
+|   Register driven from outside the Slice   |    7 |       |            |           |       |
+|     LUT in front of the register is unused |    0 |       |            |           |       |
 |     LUT in front of the register is used   |    7 |       |            |           |       |
 | Unique Control Sets                        |    9 |       |          0 |      8150 |  0.11 |
 +--------------------------------------------+------+-------+------------+-----------+-------+
@@ -178,17 +178,17 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   63 |        Flop & Latch |
-| LUT6     |   21 |                 LUT |
-| FDCE     |   16 |        Flop & Latch |
-| CARRY4   |   15 |          CarryLogic |
+| FDCE     |   18 |        Flop & Latch |
+| CARRY4   |   17 |          CarryLogic |
+| LUT6     |   14 |                 LUT |
 | OBUF     |   11 |                  IO |
-| LUT4     |    9 |                 LUT |
-| LUT3     |    6 |                 LUT |
+| LUT2     |   11 |                 LUT |
 | OBUFT    |    5 |                  IO |
 | IBUF     |    5 |                  IO |
 | LUT5     |    4 |                 LUT |
-| LUT2     |    3 |                 LUT |
-| LUT1     |    3 |                 LUT |
+| LUT4     |    4 |                 LUT |
+| LUT1     |    4 |                 LUT |
+| LUT3     |    2 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

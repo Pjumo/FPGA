@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date                      : Wed Mar  4 09:29:34 2026
+| Date                      : Wed Mar  4 11:19:10 2026
 | Host                      : DESKTOP-0G8LKRK running 64-bit major release  (build 9200)
 | Command                   : report_io -file top_rotary_io_placed.rpt
 | Design                    : top_rotary
