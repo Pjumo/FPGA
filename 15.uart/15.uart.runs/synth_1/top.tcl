@@ -70,11 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -92,9 +89,13 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/imports/new/btn_debounce.v
+  G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/circular_queue_v2.v
+  G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/control_tower.v
   G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/data_sender.v
+  G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/fnd_controller.v
   G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/imports/new/tick_gen.v
   G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/uart_controller.v
+  G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/uart_rx.v
   G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/uart_tx.v
   G:/Project/FPGA/ai1/15.uart/15.uart.srcs/sources_1/new/top.v
 }

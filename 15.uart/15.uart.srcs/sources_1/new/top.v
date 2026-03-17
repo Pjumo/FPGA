@@ -15,6 +15,7 @@ module top(
 );
     wire [2:0] w_debounced_btn;
     wire [7:0] w_rx_data;
+    wire [13:0] w_seg_data;
     wire w_rx_done;
 
     btn_debouncer u_btn_debouncer(
@@ -32,6 +33,33 @@ module top(
         .tx         (RsTx),
         .rx_data    (w_rx_data),
         .rx_done    (w_rx_done)
+    );
+
+    control_tower u_control_tower(
+        .clk        (clk),
+        .reset      (reset),
+        .btn        (w_debounced_btn),
+        .sw         (sw),
+        .rx_done    (w_rx_done),
+        .rx_data    (w_rx_data),
+        .led        (led),
+        .seg_data   (w_seg_data)
+    );
+
+    circular_queue_v2 u_circular_queue_v2(
+        .clk        (clk),
+        .reset      (reset),
+        .rx_done    (w_rx_done),
+        .rx_data    (w_rx_data),
+        .led        (led)
+    );
+
+    fnd_controller u_fnd_controller(
+        .clk    (clk),
+        .reset  (reset),
+        .in_data(w_seg_data),
+        .an     (an),
+        .seg    (seg)
     );
 
     assign uartRx = RsRx;
